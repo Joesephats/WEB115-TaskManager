@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task Manager</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="taskManager.js" defer></script>
+    </head>
+    <body>
+        <h1>Todo List</h1>
+        <form id="taskManager">
+            <input id="taskNameInput" type="text" required placeholder="Task name">
+
+            <select id="priorityList" name="priority" required>
+                <option value=""disabled selected>Priority</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <label>Important
+                <input id="importantCheck" type="checkbox" name="imporant">
+            </label>
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div id="tasks">
+            <!-- 
+            EXAMPLE OF A TASK. DYNAMICALLY ADDED TASKS FOLLOW THIS STRUCTURE
+                <div class="task">
+                    <ol class="taskDetails">
+                        <li class="taskName">Example Task (STATIC)</li>
+                        <li class="taskPriority">High</li>
+                        <li class="taskDate">4/24/2025 00:00 PM</li>
+                        <li>
+                            <label>Complete
+                                <input class="completeCheckbox" type="checkbox" name="completeCheckbox">
+                            </label>
+                        </li>
+                        <li>
+                            <button class="deleteButton">Delete</button>
+                        </li>
+                    </ol>
+                </div> 
+            -->
+        </div>
+    </body>
+</html>
