@@ -20,7 +20,7 @@
 }
 
 .task li {
-    flex: 1 1 100px;
+    flex: 1 1 100px; /* Allows list items to change size. */
     text-align: center;
     display: flex;
     align-items: center;
@@ -29,17 +29,25 @@
     word-break: break-word;
 }
 
+.deleteButton{
+    width: 70px;
+    height: 45px;
+}
+
+/* Default styling for task priority. Overwritten for medium and high priority tasks. */
 .taskPriority {
     border-radius: 30px;
     background-color: rgb(69, 195, 69);
 }
 
+/* Highlight for tasks flagged as important */
 .task.important{
     border-width: 3px;
     border-style: solid;
     border-color: tomato;
 }
 
+/* Below are style/animation rules for complete tasks. ::after controls the strikethrough*/
 .task.complete{
     opacity: 0.50;
 }
@@ -57,10 +65,7 @@
     width: 100%;
 }
 
-.deleteButton{
-    width: 70px;
-    height: 45px;
-}
+
 
 body {
     background-color: rgb(253, 245, 233);
